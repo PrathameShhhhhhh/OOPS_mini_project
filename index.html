@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OOP Bank - Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>OOP Bank</h1>
+    </header>
+
+    <section class="controls">
+      <div class="card">
+        <h2>Create Account</h2>
+        <label>Type
+          <select id="create-type">
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+          </select>
+        </label>
+        <label>Holder Name <input id="create-name" /></label>
+        <label>Initial Deposit <input id="create-deposit" type="number" /></label>
+        <button id="create-btn">Create</button>
+        <div id="create-result" class="muted"></div>
+      </div>
+
+      <div class="card">
+        <h2>Operations</h2>
+        <label>Account Number <input id="op-accno" type="number" /></label>
+        <div class="op-grid">
+          <div>
+            <label>Amount <input id="op-amt" type="number" /></label>
+            <button id="deposit-btn">Deposit</button>
+            <button id="withdraw-btn">Withdraw</button>
+          </div>
+          <div>
+            <button id="balance-btn">Check Balance</button>
+            <button id="info-btn">Display Info</button>
+          </div>
+          <div>
+            <label>From <input id="from-date" type="date" /></label>
+            <label>To <input id="to-date" type="date" /></label>
+            <button id="passbook-btn">Print Passbook</button>
+          </div>
+        </div>
+        <div id="op-result" class="muted"></div>
+      </div>
+    </section>
+
+    <section class="output">
+      <h2>Output</h2>
+      <pre id="output"></pre>
+    </section>
+
+    <footer>
+      <small>Data is stored locally in your browser (localStorage).</small>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

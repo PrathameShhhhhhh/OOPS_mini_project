@@ -1,0 +1,16 @@
+OOP Bank
+Create Account
+Type
+            Savings
+            Current
+           Holder Name Initial Deposit Create
+
+Operations
+Account Number
+Amount Deposit Withdraw
+Check Balance Display Info
+From To Print Passbook
+
+Output
+
+Data is stored locally in your browser (localStorage).
